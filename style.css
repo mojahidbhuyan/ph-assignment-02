@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,6 +6,16 @@
   list-style: none;
   text-decoration: none;
 }
+body {
+  background: #f5f8ff;
+  font-family: "Inter", sans-serif;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+}
+
 :root {
   --primary-color: #e95a08;
   --secondary-color: #00000080;
@@ -33,6 +43,12 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+.mt-12 {
+  margin-top: 120px;
+}
+.d-block {
+  display: block;
+} 
 .primary-text {
   color: #e95a08;
 }
@@ -57,6 +73,11 @@
   margin-top: 1.8rem;
 }
 
+.logo {
+  display: inline-block;
+  width: 8.4375rem;
+  height: 4.4375rem;
+}
 .nav-links,
 .nav-for-mobile {
   display: flex;
@@ -79,6 +100,29 @@
 .nav-for-mobile {
   display: none;
 }
+/* Banner style start  */
+.banner-content {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 1rem;
+}
+
+.banner-headings > .banner-heading {
+  font-size: 4.2rem;
+  font-weight: 800;
+  line-height: 6rem;
+}
+.banner-headings > .banner-description {
+  margin-top: 1rem;
+  color: #00000050;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+/* mobile responsive */
+
 @media screen and (max-width: 576px) {
   .nav-links {
     display: none;
@@ -96,10 +140,18 @@
   .nav-content img {
     width: 20%;
   }
+
+ /* Banner Mobile Responsive  */
+  .banner-content {
+    flex-direction: column-reverse;
+  }
+  .banner-headings > .banner-heading {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+  .banner-headings > .banner-description {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
 }
-
-/* navbar styling End */
-
-/* Banner Style Start  */
-
-/* Banner Style Start  */
