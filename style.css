@@ -222,6 +222,21 @@ img {
   color: #00000020;
 }
 
+/* Trusted Badge Spinning Style  */
+@keyframes spinning-badge {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
  /* Plant Lover style End  */
 
 
