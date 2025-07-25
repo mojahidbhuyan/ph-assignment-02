@@ -320,7 +320,6 @@ img {
  /* Join Style Start  */
  .join-section {
   color: #fff;
-  width: 100%;
   height: 530px;
   display: flex;
   text-align: center;
@@ -328,14 +327,18 @@ img {
   background-image: url(./assets/news-letter-bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
+}
+.join-content {
+  padding: 0 6rem;
 }
 .join-form {
-  margin-top: 1rem;
+  margin-top: 3rem;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
 }
 .join-form input {
   width: 100%;
@@ -343,12 +346,13 @@ img {
   padding: 1rem;
   border: none;
   outline: none;
+  color: black;
 }
 .subscribe {
   height: 3rem;
   color: #fff;
   background-color: var(--primary-color);
-  padding: 1rem;
+  padding: 0.7rem;
   border: none;
   outline: none;
 }
@@ -373,6 +377,7 @@ img {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
+  margin-top: 20px;
 }
 .footer-links ul,
 .footer-term-links ul {
@@ -415,6 +420,9 @@ img {
   .nav-link {
     font-size: 1.4rem;
     font-weight: 400;
+  }
+    .nav-link {
+    font-size: 14px;
   }
   .nav-link > .fa-cart-shopping {
     margin-right: 1rem;
@@ -529,6 +537,12 @@ img {
   .join-section {
     height: 270px;
   }
+    .join-content {
+    padding: 0 2rem;
+  }
+  .join-form {
+    margin-top: 0.5rem;
+  }
   .join-title {
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -536,7 +550,7 @@ img {
     /* Join Style Mobile Responsive End  */
 
     /* Footer Style Mobile Responsive Start  */
-    
+
   .footer-content {
     flex-direction: column;
   }
