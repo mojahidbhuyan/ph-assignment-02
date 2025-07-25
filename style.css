@@ -174,18 +174,18 @@ img {
 /* product plant style End */
 
  /* Plant Lover style Start  */
- .flower-store-content {
+ .flower-lover-content {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 200px;
   gap: 5rem;
 }
-.flower-store-img,
-.flower-store-description {
+.flower-lover-img,
+.flower-lover-description {
   flex: 1;
 }
-.flower-store-img {
+.flower-lover-img {
   position: relative;
 }
 .trusted-badge {
@@ -317,6 +317,44 @@ img {
  /* Latest Deals Style End  */
 
 
+ /* Join Style Start  */
+ .join-section {
+  color: #fff;
+  width: 100%;
+  height: 530px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-image: url(./assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.join-form {
+  margin-top: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-form input {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  outline: none;
+}
+.subscribe {
+  height: 3rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border: none;
+  outline: none;
+}
+ /* Join Style End  */
+
+
 /* Mobile Responsive Style Start */
 
 
@@ -443,7 +481,15 @@ img {
   }
     /* Latest Deals Mobile Responsive End  */
 
-
+    /* Join Style Mobile Responsive Start  */
+  .join-section {
+    height: 270px;
+  }
+  .join-title {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+    /* Join Style Mobile Responsive End  */
 
 }
 
