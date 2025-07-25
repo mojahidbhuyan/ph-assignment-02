@@ -1,1 +1,105 @@
 @import "tailwindcss";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --primary-color: #e95a08;
+  --secondary-color: #00000080;
+  --dark-color: #111;
+  --indigo: #8987a1;
+}
+/* shared style Start */
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-noto {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.primary-text {
+  color: #e95a08;
+}
+.primary-title {
+  font-family: "Noto Serif", serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+.primary-description {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+/* navbar styling Start */
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+
+.nav-links,
+.nav-for-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-link {
+  color: var(--dark-color);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.nav-link:hover {
+  color: var(--indigo);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.nav-for-mobile {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-for-mobile {
+    display: block;
+  }
+  .nav-link {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  .nav-link > .fa-cart-shopping {
+    margin-right: 1rem;
+  }
+  .nav-content img {
+    width: 20%;
+  }
+}
+
+/* navbar styling End */
+
+/* Banner Style Start  */
+
+/* Banner Style Start  */
