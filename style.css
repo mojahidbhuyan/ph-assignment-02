@@ -22,7 +22,9 @@ img {
   --dark-color: #111;
   --indigo: #8987a1;
 }
-/* shared style Start */
+
+
+/* Shared Style Start */
 .container {
   max-width: 1140px;
   width: 90%;
@@ -65,7 +67,9 @@ img {
   line-height: 2rem;
 }
 
-/* navbar styling Start */
+/* Shared Style End */
+
+/* Navbar styling Start */
 .nav-content {
   display: flex;
   justify-content: space-between;
@@ -100,6 +104,10 @@ img {
 .nav-for-mobile {
   display: none;
 }
+/* Navbar styling End */
+
+
+
 /* Banner style start  */
 .banner-content {
   display: flex;
@@ -120,8 +128,57 @@ img {
   font-weight: 500;
   line-height: 2rem;
 }
+/* Banner style End  */
 
-/* mobile responsive */
+
+/* Product plant style Start */
+.product-headings > .primary-description {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+}
+.product-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem;
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+.product-item {
+  text-align: center;
+}
+
+.product-price,
+.product-title {
+  color: var(--dark-color);
+  font-family: "inter", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.product-title {
+  font-weight: 500;
+}
+.product-btn {
+  width: 100%;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--primary-color);
+  padding: 1.2rem 0;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+}
+/* product plant style End */
+
+
+/* Mobile Responsive Style Start */
+
+
+
+ /* Nav Mobile Responsive Start  */
 
 @media screen and (max-width: 576px) {
   .nav-links {
@@ -141,7 +198,10 @@ img {
     width: 20%;
   }
 
- /* Banner Mobile Responsive  */
+  /* Nav Mobile Responsive End  */
+
+
+ /* Banner Mobile Responsive Start  */
   .banner-content {
     flex-direction: column-reverse;
   }
@@ -154,4 +214,37 @@ img {
     font-size: 1rem;
     line-height: 1.4rem;
   }
+
+   /* Banner Mobile Responsive End  */
+
+
+  /* Mobile Responsive Product Item Start  */
+
+   .product-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-headings > .primary-description {
+    max-width: 100%;
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .product-headings > .primary-title {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .product-price,
+  .product-title {
+    font-size: 18px;
+    margin-top: 0.4rem;
+  }
+  .product-title {
+    margin-top: 1rem;
+  }
+  .product-btn {
+    font-size: 1rem;
+    padding: 0.9rem 0;
+  }
+    /* Mobile Responsive Product Item End  */
 }
+
