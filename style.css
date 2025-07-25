@@ -54,6 +54,9 @@ img {
 .primary-text {
   color: #e95a08;
 }
+.text-center {
+  text-align: center;
+}
 .primary-title {
   font-family: "Noto Serif", serif;
   font-size: 3rem;
@@ -115,6 +118,11 @@ img {
   align-items: end;
   gap: 1rem;
 }
+.banner-headings,
+.banner-img {
+  flex: 1;
+}
+
 
 .banner-headings > .banner-heading {
   font-size: 4.2rem;
@@ -171,7 +179,7 @@ img {
   border: none;
   outline: none;
 }
-/* product plant style End */
+/* product plant Style End */
 
  /* Plant Lover style Start  */
  .flower-lover-content {
@@ -411,6 +419,9 @@ img {
  /* Nav Mobile Responsive Start  */
 
 @media screen and (max-width: 576px) {
+    .sm-mt-6 {
+    margin-top: 60px;
+  }
   .nav-links {
     display: none;
   }
@@ -425,10 +436,15 @@ img {
     font-size: 14px;
   }
   .nav-link > .fa-cart-shopping {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
   .nav-content img {
     width: 20%;
+  }
+    .logo {
+    display: inline-block;
+    width: 4rem;
+    height: 2.5rem;
   }
 
   /* Nav Mobile Responsive End  */
